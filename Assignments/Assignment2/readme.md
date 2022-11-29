@@ -1,4 +1,4 @@
-Assignment 2
+# Assignment 2
 
 Objectives: To know about the color and about the ways how you can access it
 
