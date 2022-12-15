@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navbar Section</title>
+        <style type="text/css">
+            .div1{
+                position: absolute;
+                top: 0px;
+                right: 3px;
+                left: 3px;
+                bottom: 560px;
+                border-bottom: 1px solid gray;
+            }
+            h3{
+                position: absolute;
+                top: 0px;
+                left: 65px;
+                bottom: 580px;
+                font-size: 30px; 
+            }
+            img{
+                position: absolute;
+                top: 25px;
+                left: 15px;
+                bottom: 580px;
+            }
+            ul{
+                float: left;
+                position: absolute;
+                top: 18px;
+                bottom: 580px;
+                left: 0px;
+                right: 20px;
+                list-style-type: none;
+            }
+            .div2{
+                position: absolute;
+                top: 0px;
+                right: 3px;
+                left: 200px;
+                bottom: 560px;
+            }
+            a{
+                text-decoration: none;
+                color: gray;
+                float: left;
+                font-size: 20px;
+            }
+            li{
+                float: left;
+                margin-right: 50px;
+                margin-left: 0px;
+            }
+            .list1:active{
+                height: 53.5px;
+                border-bottom: 3px solid #7611f4;
+                font-weight: bold;
+                color: #3e4251;
+            }
+            input{
+                position:absolute;
+                top:25px;
+                left: 750px;
+                right: 200px;
+                
+                border: 1px solid #dde0e4;
+                border-radius: 8px;
+            }
+           </style>
+    </head>
+    <body>
+        <nav>
+            <div class="div1">
+                <img src="workflow.PNG" alt="sry">
+                <h3>workflow</h3>
+                <div class="div2">
+                    <ul>
+                        <li class="list1"><a href="#">Dashboard</a></li>
+                        <li class="list1"><a href="#">Team</a></li>
+                        <li class="list1"><a href="#">Projects</a></li>
+                        <li class="list1"><a href="#">Calender</a></li>
+                    </ul>
+                </div>
+                <form id="form" role="search">
+                    <input type="search" id="query" name="q" placeholder="Search">
+                    <button><img src="./image2.png" alt="image"></button>
+                  </form>
+                <a href="#" class="notification">
+                    <span><img src="./image3.png" alt="image"></span>
+                </a>
+                <a href="#">
+                   <span class="profile"><img src="./image4.png" alt="image"></span>
+                </a>
+            </div>
+        </nav>
+    </body>
+</html>

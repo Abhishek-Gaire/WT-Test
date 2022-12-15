@@ -3,6 +3,10 @@
     <head>
         <title>Hero Section</title>
         <style>
+            ul{
+                list-style-type: none;
+                font-size: 20px;
+            }
             .e1{
                 position: absolute;
                 top: 20px;
@@ -57,7 +61,15 @@
                 top: 30px;
                 right: 20px;
             }
-            
+            li::before{
+                content: "✓";
+                color: #4a88f9;
+                border: 2px solid #4a88f9;
+                padding:1px 3px;
+                border-radius: 50px;
+                position: relative;
+                right: 30px;
+            }
             
             .button1{
                 padding-top: 5px;
@@ -118,7 +130,7 @@
             <div class="Middle">
                 <div class="div3">
                     <p class="heading">Easiest way to create your website</p>
-                    <ul type="✓">
+                    <ul>
                         <li>Clean and Simple Layout</li>
                         <li>Just Copy Paste Codying</li>
                         <li>Easy to Use</li>
