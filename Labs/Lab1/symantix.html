@@ -4,23 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Symantix Tag</title>
+    <title>Semantics and Text Formatting Tag</title>
     <style type="text/css">
+        *{
+            box-sizing: border-box;            
+        }
         #a li{
             display: inline-block;
         }
         li{
-            margin-left: 20px;
+            margin-right: 60px;
+            color: white;
         }
         #b{
             float: right;
             margin-right: 80px;
+            color: rgb(233, 110, 110);
         }
         .div1 div{
             display: inline-block;
         }
-
-        
+        nav{
+            font-weight: 1000;
+            font-size: 20px;
+        }
+        .div3 {
+            text-align: center;
+        }
+        .div3 h2{
+            color: rgb(155, 240, 144);
+        }
+        .div2 ul {
+            list-style-type: none;
+            font-size: 20px;  
+        }
+        .div2 li{
+            margin-top: 10px;
+        }
+        .div3 p{
+            font-size: 18px;
+            font-weight: 600;
+            color: rgb(191, 152, 241); 
+        }
+        #d{
+            text-align: center;
+            color: orangered;
+        }
+        body{
+            background-image: url('photo.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        video{
+            margin-left: 440px;
+        }
     </style>
 </head>
 <body>
@@ -33,6 +70,8 @@
                         <li>Pages</li>
                         <li>HTML</li>
                         <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
                     </ul>
                 </div>
                 <div id="b">
@@ -41,5 +80,82 @@
             </div>
         </nav>
     </header>
+    <aside>
+        <div class="div2">
+            <ul>
+                <li><i>
+                    Learn HTML(Italic Text)
+                </i></li>
+                <li><b>
+                    Learn CSS(Bold Text)
+                </b></li>
+                <li><strong>
+                    Learn JavaScript(Strong Text)
+                </strong> </li>
+                <li><em>
+                    Learn Python(Emphasized Text)
+                </em></li>
+                <li><mark>
+                    Learn C/C++(Marked Text)
+                </mark></li>
+                <li><small>
+                    Learn C#(Small Text)
+                </small></li>
+                <li>Hi
+                    <sup>
+                        This is superscript
+                    </sup>
+                </li>
+                <li>Hello
+                    <sub> 
+                        This is subscript
+                    </sub>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <section>
+        <div class="div3">
+            <h2>In this Webpage</h2>
+            <p>
+                Here we are learning to use semantics tags for creating a layout.<br>
+                I have used semantics tags like header, footer, aside and section till now<br>
+                This is section tag.<br>
+                Not only semantics tag I have used text formatting tags<br>
+            </p>
+        </div>
+    </section>
+    <main>
+        <video width="520" height="340" controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </main>
+    <section>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+    <footer>
+        <nav>
+            <div class="div1">
+                <div id="a">
+                    <ul>   
+                        <li>Terms</li>
+                        <li>Privacy Policy</li>
+                        <li>Security</li>
+                        <li>Status</li>
+                        <li>About</li>
+                        <li>Contact Us</li>
+                        <li>Developers</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div id="b">
+                    <p>Contact Us</p>
+                </div>
+            </div>
+        </nav>
+        <h2 id="d">Copyright Issue</h2>
+    </footer>
 </body>
 </html>
