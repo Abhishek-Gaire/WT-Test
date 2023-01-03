@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #div1{
+            height: 200px;
+            width: 170px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: 2px solid rgba(75, 74, 74, 0.171);
+            background-color: gray;
+        }
+        button{
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="div1">
+            <input type="text" id="display">
+            <div>
+                <button id="btn1" onclick="show()">1</button>
+                <button id="btn2" onclick="show()">2</button>
+                <button id="btn3">3</button>
+                <button id="btn14">+</button>
+                <button id="btn4">4</button>
+                <button id="btn5">5</button>
+                <button id="btn6">6</button>
+                <button id="btn13">-</button>
+                <button id="btn7">7</button>
+                <button id="btn8">8</button>
+                <button id="btn9">9</button>
+                <button id="btn15">×</button>
+                <button id="btn10">0</button>
+                <button id="btn11">.</button>
+                <button id="btn12">=</button>
+                <button id="btn16">÷</button>
+            </div>
+        </div>
+    </nav>
+    <script type="text/javascript">
+        function show()
+        {
+            let number = document.getElementById("btn1");
+            document.getElementById("display").textContent = 1;
+        }
+       
+    </script>
+</body>
+</html>
