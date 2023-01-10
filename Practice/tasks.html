@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Tasks" id="task-input">
+    <h2>List of Tasks</h2>
+    <div id="display"></div>
+    <script>
+        document.getElementById("task-input").addEventListener("keyup", 
+        function(event){
+            task=document.getElementById("task-input").value;
+            if(event.keyCode == 13 && task ==""){
+                document.getElementById("display").innerHTML = task +"</br>";
+            }
+        })
+    </script>
+</body>
+</html>
