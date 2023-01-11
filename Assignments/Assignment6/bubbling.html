@@ -6,16 +6,28 @@
 </head>  
 <body>  
   <div id="p1">  
-    <button id="c1">I am child button</button>  
+    <div id="p2">
+      <div id="p3">
+        <button id="c1">I am child button</button>  
+      </div>
+    </div>
   </div>  
     
   <script>  
-    var parent = document.querySelector('#p1');  
-      parent.addEventListener('click', function(){  
-        console.log("Parent is invoked");  
+    var GreatGrandParent = document.querySelector('#p1');  
+      GreatGrandParent.addEventListener('click', function(){  
+        console.log("Great Grandparent is invoked");  
       });  
   
-   var child = document.querySelector('#c1');  
+      var GrandParent = document.querySelector("#p2");
+      GrandParent.addEventListener('click',function(){
+        console.log("Grandparent is Invoked");
+      })
+    var Parent = document.querySelector("#p3");
+    Parent.addEventListener('click',function(){
+      console.log("Parent is Invoked");
+    })
+    var child = document.querySelector('#c1');  
       child.addEventListener('click', function(){  
         console.log("Child is invoked");  
       });  
