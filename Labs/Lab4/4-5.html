@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <form action="process.html" id="Form" onsubmit="validateForm(event)" >
+    <form action="process.html" id="Form" onsubmit=" return validateForm(event)" >
         
         <div>
             <label for="email">
@@ -37,14 +37,19 @@
         </div>
     </form>
     <script type="text/javascript">
-        document.getElementById("Form").addEventListener("submit", validateForm);
-
+        
         function validateForm(Event){
-            let EventEm=document.getElementById("email").textContent;
-            if (EventEm=="" || EventEm==null ){
-               alert("Please Input your Email");
+            let EventEm=document.getElementById("email").value;
+            let EventPw=document.getElementById("password").value;
+            if (EventEm==""){
+               alert("Email Required");
                return false;
             }
+            else if(EventPw.length<6){  
+                alert("Password must be at least 6 characters long.");  
+                return false;  
+            }  
+
         } 
     </script>
 </body>

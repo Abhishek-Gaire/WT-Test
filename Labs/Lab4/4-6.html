@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Name and Other Things</title>
+    <style>
+        div{
+            margin-top: 10px;
+        }
+        input{
+            color: rgb(21, 205, 104);
+        }
+        label{
+            color: rgb(234, 111, 4);
+        }
+    </style>
+</head>
+<body>
+    <form id="contact_form" action="process.html" onsubmit="return validateForm()">
+        <div>
+            <label for="name">
+                Name:
+                <input type="text" id="name">
+            </label>
+        </div>
+        <div>
+            <label for="email">
+                Email:
+                <input type="email" name="email" id="email" placeholder="something@gmail.com">
+            </label>
+        </div>
+        <div>
+            <label for="contactNo">
+                Contact Number:
+                <input type="number" id="tel">
+            </label>
+        </div>
+        <div>
+            <label for="country">
+                Country:
+                <input type="text" id="country">
+            </label>
+        </div>
+        <div>
+            <button type="submit" value="submit" id="submit">Submit</button>
+        </div>
+    </form>
+    <script type="text/javascript">
+        
+        function validateForm(){
+            var Name=document.getElementById("name").value;
+            var Email=document.getElementById("email").value;
+            var PhoneNumber=document.getElementById("tel").value;
+            var Country=document.getElementById("country").value;
+            if (Name==""){
+               alert("Enter your Name");
+               return false;
+            }
+            else if(Email==""){  
+                alert("Enter your Email");  
+                return false;  
+            } 
+            else if(PhoneNumber==""){
+                alert("Enter your Contact Number");
+                return false;
+            }
+            else if(Country==""){
+                alert("Enter the name of your country");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
