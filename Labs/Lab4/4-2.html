@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stacking Cursor and Position</title>
+  </head>
+
+  <body>
+    <div id="box1" style="background-color: rgb(139, 250, 114); width: 100px; height: 100px">
+      Box 1
+    </div>
+    <div id="box2" style="background-color: rgb(168, 27, 11); width: 100px; height: 100px">
+        Box 2
+    </div>
+    <div id="box3" style="background-color: rgba(237, 199, 129, 0.269); width: 100px; height: 100px">
+        Box 3
+      </div>
+    <script>
+        const box1 = document.getElementById('box1');
+        box1.style.position = 'fixed';
+        box1.style.top = '50px';
+        box1.style.left = '50px';
+        const box2 = document.getElementById('box2');
+        box2.style.position = 'relative';
+        box2.style.top = '100px';
+        box2.style.left = '100px';
+        const box3 = document.getElementById('box3');
+        box3.style.position = 'absolute';
+        box3.style.top = '150px';
+        box3.style.left = '150px';
+        Array.from(document.getElementsByTagName("div")).forEach(function (el){
+			el.addEventListener("click", function (event) {
+				event.target.style.zIndex = "10";
+			})
+	    })
+        document.getElementById("box1").style.cursor = "pointer";
+        document.getElementById("box2").style.cursor = "no-drop";
+        document.getElementById("box3").style.cursor = "all-scroll";
+    </script>
+  </body>
+</html>
+
+
+
